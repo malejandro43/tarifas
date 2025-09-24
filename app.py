@@ -68,7 +68,8 @@ if pdf_file:
     # else:
     #     st.warning("⚠️ No se detectaron tablas en el PDF")
     
-xlsx_path = "C:/Users/m_ale/Downloads/proyectos/tarifas/lista de paises.xlsx"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+xlsx_path = os.path.join(BASE_DIR, "lista_de_paises.xlsx")
 sheets = pd.read_excel(xlsx_path, sheet_name=None)
 sheets = {}
 if os.path.exists(xlsx_path):
