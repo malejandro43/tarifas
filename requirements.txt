@@ -1,0 +1,6 @@
+streamlit
+pypdf
+pdfplumber
+pandas
+pyarrow    # para exportar a parquet (opcional pero recomendado)
+openpyxl   # para exportar a Excel (opcional)
